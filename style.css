@@ -1,7 +1,7 @@
 .wrapper{
     display: grid;
     border: solid 1px #900;
-    background-color: rgb(255, 226, 226);
+    
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 20em;
     padding: 1em;
@@ -20,9 +20,11 @@
         background-size: cover;
         background-image: url("https://www.photock.jp/photo/middle_webp/photo0000-4070.webp");
     }
-
-    .children{
-        background-color: rgb(255, 226, 226);
+    .last-image{
+        border: solid 1px #900;
+        background-position: right;
+        background-size: cover;
+        background-image: url("https://free-materials.com/adm/wp-content/uploads/2016/11/adtDSC_3948-750x499.jpg");
     }
     
     .box2 {
@@ -36,10 +38,6 @@
         grid-template-columns: subgrid;
         gap: 1em;
     }
-    
-        .nested-from-box3{
-            background-color: rgb(255, 226, 226);
-        }
         
         .box3-1{
             grid-column: 1/2;
@@ -66,10 +64,6 @@
         gap: 1em;
         }
         
-        .nested-from-box7{
-            background-color: rgb(255, 226, 226);
-        }
-        
     .box8{
         z-index: 1;
         grid-row: span 2;
@@ -80,10 +74,6 @@
         grid-template-rows: repeat(8, 1fr);
         gap: 1em;
     }
-        
-        .nested-from-box8{
-            background-color: rgb(255, 226, 226);
-        }
         
         .box8-1{
             grid-column: 1/4;
@@ -133,10 +123,6 @@
         grid-template-columns: repeat(7, 1fr);
         gap: 1em;
     }
-    
-        .nested-from-box11{ 
-            background-color: rgb(255, 226, 226);
-        }
 
         .box11-8{
             height: 10em;
@@ -158,7 +144,7 @@
     }
 
         .nested-from-box12{
-            background-color: rgb(255, 226, 226);
+            background-color: rgb(255, 255, 255);
             grid-area: 2/2/3/3;
             border: solid 1px #900;
         }
@@ -173,7 +159,6 @@
     }
         
         .nested-from-box15{
-            background-color: rgb(255, 226, 226);
             padding-bottom: 4em;
         }
         
@@ -191,10 +176,6 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap:1em;
     }
-    
-        .nested-from-box16{
-            background-color: rgb(255, 226, 226);
-        }
         
     .box19{
         grid-row: 15;
@@ -209,10 +190,6 @@
         grid-template-rows: repeat(3, 1fr);
         gap: 1em;
     }
-    
-        .nested-from-box20{
-            background-color: rgb(255, 226, 226);
-        }
     
         .box20-1{
             grid-area: 2/1/4/2;
@@ -242,11 +219,7 @@
         "ft ft ft ft ft main main . .";
         gap: 1em;
     }
-    
-        .nested-from-box21{
-            background-color: rgb(255, 226, 226);
-        }
-        
+
         .box21-1 {
             grid-area: hd;
         }
@@ -271,9 +244,7 @@
         gap: 1em;
     }
     
-        .nested-from-box22{
-            background-color: rgb(255, 226, 226);
-            
+        .nested-from-box22{            
             display: grid;
             gap: 1em;
             grid-template-columns: 1fr 3fr;
@@ -288,7 +259,6 @@
     
             .nested-from-box22 .img{
                 grid-area: img;
-                background-color: rgb(255, 226, 226);
             }
             
             .nested-from-box22 .content{
@@ -314,10 +284,6 @@
         gap: 1em;
     }
 
-        .nested-from-box0{
-            background-color: rgb(255, 226, 226);
-        }
-
         .box0 div:nth-child(2) {
             grid-column: 3;
             grid-row: 2 / span 2;
@@ -327,6 +293,13 @@
             grid-column: 1 / span 2;
             grid-row: 1 / span 2;
          }
+
+    .box26{
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
 .add-gap{
     gap: 1em;
@@ -341,4 +314,8 @@
     .add-gap{
         gap: 0.5em;
     }
+}
+
+.footer{
+    text-align: center;
 }
