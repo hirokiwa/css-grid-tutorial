@@ -7,6 +7,13 @@
     padding: 1em;
     gap: 1em;
 }
+
+    .top-image{
+        border: solid 1px #900;
+        background-position: left;
+        background-size: cover;
+        background-image: url("https://free-materials.com/adm/wp-content/uploads/2017/01/adtDSC_7628-750x499.jpg");
+    }
     .add-image{
         border: solid 1px #900;
         background-position: center;
@@ -20,12 +27,10 @@
     
     .box2 {
         grid-column: 2/4;
-        grid-row: 1/2;
     }
     
     .box3 {
         grid-column: 1/3;
-        grid-row: 2/3;
         
         display: grid;
         grid-template-columns: subgrid;
@@ -53,7 +58,7 @@
         
     .box7 {
         grid-column: 2/4;
-        grid-row: 3/5;
+        grid-row: 6/8;
         
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -67,7 +72,7 @@
         
     .box8{
         z-index: 1;
-        grid-row: 5/7;
+        grid-row: span 2;
         grid-column: 1/3;
         
         display: grid;
@@ -145,7 +150,7 @@
         }
         
     .box12{
-        grid-row: 8/ span 2;
+        grid-row: span 2;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -155,6 +160,7 @@
         .nested-from-box12{
             background-color: rgb(255, 226, 226);
             grid-area: 2/2/3/3;
+            border: solid 1px #900;
         }
     
     .box15{
@@ -191,11 +197,11 @@
         }
         
     .box19{
-        grid-row: 12;
+        grid-row: 15;
     }
     
     .box20{
-        grid-row: 11/ span 2;
+        grid-row: span 2;
         grid-column: 2/ span 2;
         
         display: grid;
@@ -209,11 +215,11 @@
         }
     
         .box20-1{
-            grid-area: 1/1/4/2;
+            grid-area: 2/1/4/2;
         }
         
         .box20-2{
-            grid-area: 1/2/2/3;
+            grid-area: 1/1/2/3;
         }
             
         .box20-3{
@@ -321,4 +327,18 @@
             grid-column: 1 / span 2;
             grid-row: 1 / span 2;
          }
-        
+
+.add-gap{
+    gap: 1em;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper{
+        grid-auto-rows: 10em;
+        padding: 0.5em;
+        gap: 0.5em;
+    }
+    .add-gap{
+        gap: 0.5em;
+    }
+}
