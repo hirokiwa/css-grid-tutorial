@@ -7,10 +7,15 @@
     padding: 1em;
     gap: 1em;
 }
+    .add-image{
+        border: solid 1px #900;
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://www.photock.jp/photo/middle_webp/photo0000-4070.webp");
+    }
 
     .children{
-        border: solid 1px #900;
-        background-color: rgb(255, 165, 165);
+        background-color: rgb(255, 226, 226);
     }
     
     .box2 {
@@ -24,12 +29,10 @@
         
         display: grid;
         grid-template-columns: subgrid;
-        padding: 1em;
         gap: 1em;
     }
     
         .nested-from-box3{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
         
@@ -56,11 +59,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 1em;
-        padding: 1em;
         }
         
         .nested-from-box7{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
         
@@ -72,12 +73,10 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        padding: 1em;
         gap: 1em;
     }
         
         .nested-from-box8{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
         
@@ -127,12 +126,10 @@
         
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        padding: 1em;
         gap: 1em;
     }
     
-        .nested-from-box11{
-            border: solid 1px #900;
+        .nested-from-box11{ 
             background-color: rgb(255, 226, 226);
         }
 
@@ -144,6 +141,7 @@
             top: 5em;
             left: 2em;
             opacity: 0.9;
+            display: none;
         }
         
     .box12{
@@ -155,7 +153,6 @@
     }
 
         .nested-from-box12{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
             grid-area: 2/2/3/3;
         }
@@ -167,11 +164,9 @@
         grid-template-columns: repeat(3,1fr);
         align-items: end;
         gap: 1em;
-        padding: 1em;
     }
         
         .nested-from-box15{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
             padding-bottom: 4em;
         }
@@ -186,14 +181,12 @@
         
     .box16{
         grid-column: 1/3;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 1em;
-    gap:1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:1em;
     }
     
         .nested-from-box16{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
         
@@ -208,12 +201,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        padding: 1em;
         gap: 1em;
     }
     
         .nested-from-box20{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
     
@@ -244,11 +235,9 @@
         ". sd sd sd . main main . ."
         "ft ft ft ft ft main main . .";
         gap: 1em;
-        padding: 1em;
     }
     
         .nested-from-box21{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
         
@@ -274,11 +263,9 @@
         
         display: grid;
         gap: 1em;
-        padding: 1em;
     }
     
         .nested-from-box22{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
             
             display: grid;
@@ -319,11 +306,9 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
         gap: 1em;
-        padding: 1em;
     }
 
         .nested-from-box0{
-            border: solid 1px #900;
             background-color: rgb(255, 226, 226);
         }
 
